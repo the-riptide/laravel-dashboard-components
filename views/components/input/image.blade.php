@@ -7,7 +7,7 @@
         
         {{-- Image upload --}}
         <input
-            wire:model.defer="{{ $model->model }}"
+            wire:model="{{ $model->model }}"
             type="file"
         >
 
@@ -15,7 +15,7 @@
         @isset($model['content'])
             <div class="mt-6">
                 <img src="{{ Storage::url($model['content']) }}" class="mb-8 w-full rounded-md" alt="">
-                <x-dashcomp::buttons.slot danger="true" type="button" wire:click="removeImage('{{$model->model}}')"> Remove Image </x-dashcomp::buttons.slot>
+                <x-dashcomp::buttons.slot danger="true" type="button" wire:click="removeImage('{{ $model->name }}')"> Remove Image </x-dashcomp::buttons.slot>
             </div>
         @endisset
 

@@ -6,11 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{{ config('app.name', 'The Riptide') }}</title>
 
-    <!-- Styles -->
-    <link rel="stylesheet" href="{{ mix('css/app.css') }}">
-
-    <!-- Scripts -->
-    <script src="{{ mix('js/app.js') }}" defer></script>
+    <!-- Styles and scripts: the host app's Vite entries -->
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
 
     @stack('head')
 

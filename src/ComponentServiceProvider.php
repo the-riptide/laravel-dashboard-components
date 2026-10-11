@@ -6,8 +6,8 @@ use Illuminate\Support\ServiceProvider;
 
 class ComponentServiceProvider extends ServiceProvider
 {
-
-    public function boot() {
+    public function boot()
+    {
 
         $this->loadViewsFrom(__DIR__.'/../views', 'dashcomp');
 
@@ -16,8 +16,5 @@ class ComponentServiceProvider extends ServiceProvider
         ]);
     }
 
-    public function register() {
-
-
-    }
+    public function register() {}
 }

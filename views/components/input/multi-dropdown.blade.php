@@ -24,7 +24,7 @@
                 <div class="px-2">-</div>
             </div>
 
-            <select  wire:model.defer="{{$relation->model}}" multiple
+            <select  wire:model="{{$relation->model}}" multiple
                 class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
                 <option> Please Choose... </option>
 
